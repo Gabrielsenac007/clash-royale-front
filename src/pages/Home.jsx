@@ -1,5 +1,7 @@
 import CardDashboard from '../components/CardDashboard';
-import { FaCrown, FaChartBar, FaUsers } from 'react-icons/fa';
+import { FaCrown, FaChartBar, FaUsers, FaSearch, FaBolt, FaLayerGroup, FaSkull, FaMedal } from 'react-icons/fa';
+import { TbPlayCardStarFilled } from "react-icons/tb";
+
 
 export default function Home() {
   return (
@@ -13,10 +15,13 @@ export default function Home() {
       {/* Conteúdo acima da overlay */}
       <div className="w-full relative z-10">
         <h1 className="text-5xl font-bold mb-6 text-center">🏰 Painel Clash Royale</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           <CardDashboard title="Batalhas" icon={<FaCrown />} to="/batalhas" />
-          <CardDashboard title="Estatísticas" icon={<FaChartBar />} to="/estatisticas" />
           <CardDashboard title="Jogadores" icon={<FaUsers />} to="/jogadores" />
+          <CardDashboard title="Cartas: Vitória/Derrota" icon={<TbPlayCardStarFilled />} to="/consultas/porcentagem" />
+          <CardDashboard title="Decks Vitoriosos" icon={<FaMedal />} to="/consultas/decks-vitoriosos" />
+          <CardDashboard title="Derrotas com Combo" icon={<FaSkull />} to="/consultas/derrotas-combo" />
+          <CardDashboard title="Combos Eficientes" icon={<FaLayerGroup />} to="/consultas/combos-eficientes" />
         </div>
       </div>
     </div>

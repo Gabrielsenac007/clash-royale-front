@@ -10,7 +10,7 @@ import ConsultaCombosEficientes from './pages/ConsultaCombosEficientes';
 
 export const router = createBrowserRouter([
   {
-    path: '/home',
+    path: '/',
     element: <Home />
   },
   {
@@ -33,7 +33,7 @@ export const router = createBrowserRouter([
   },
 
   {
-     path: '/consultas/decksvitoriosos', 
+     path: '/consultas/decks-vitoriosos', 
     element: <ConsultaDecksVitoriosos /> 
   },
 
