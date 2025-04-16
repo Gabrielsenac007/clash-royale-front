@@ -9,7 +9,7 @@ export default function Jogadores() {
   useEffect(() => {
     const fetchJogadores = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/jogadores');
+        const response = await axios.get('https://clash-royale-80o9.onrender.com/jogadores');
         setJogadores(response.data);
       } catch (error) {
         console.error('Erro ao buscar jogadores:', error);

@@ -19,7 +19,7 @@ export default function ConsultaCombosEficientes() {
       if (inicio) params.append('inicio', inicio);
       if (fim) params.append('fim', fim);
 
-      const response = await axios.get(`http://localhost:3000/estatisticas/combos?${params}`);
+      const response = await axios.get(`https://clash-royale-80o9.onrender.com/estatisticas/combos?${params}`);
       setCombos(response.data.combos);
     } catch (error) {
       console.error('Erro ao buscar combos eficientes:', error);

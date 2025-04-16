@@ -8,7 +8,7 @@ export default function Batalhas() {
   useEffect(() => {
     const fetchBatalhas = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/batalhas');
+        const response = await axios.get('https://clash-royale-80o9.onrender.com/batalhas');
         console.log(response.data);
         setBatalhas(response.data);
       } catch (error) {

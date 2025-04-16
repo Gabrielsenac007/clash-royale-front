@@ -17,7 +17,7 @@ export default function ConsultaDerrotasCombo() {
       if (inicio) params.append('inicio', inicio);
       if (fim) params.append('fim', fim);
 
-      const response = await axios.get(`http://localhost:3000/batalhas/derrotas-combo?${params}`);
+      const response = await axios.get(`https://clash-royale-80o9.onrender.com/batalhas/derrotas-combo?${params}`);
       setResultado(response.data);
     } catch (error) {
       console.error('Erro ao buscar derrotas do combo:', error);

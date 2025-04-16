@@ -15,7 +15,7 @@ export default function ConsultaPorcentagem() {
     setResultado(null);
 
     try {
-      const res = await axios.get(`http://localhost:3000/batalhas/vitorias-derrotas/${nomeCarta}`);
+      const res = await axios.get(`https://clash-royale-80o9.onrender.com/batalhas/vitorias-derrotas/${nomeCarta}`);
       setResultado(res.data);
     } catch (err) {
       console.error(err);
